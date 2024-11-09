@@ -1,0 +1,794 @@
+
+.slick-dots {
+  display: block !important;
+  
+  color: black;
+}
+.slider-container {
+  width: 100%; /* or a fixed width */
+  margin: 0 auto; /* center the slider */
+}
+/* Make carousel responsive */
+
+.carousel {
+  margin-bottom: 20px;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 500px; /* adjust height according to your needs */
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Add animations to captions */
+
+.animated {
+  animation-duration: 2s;
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+/* carousel responsive*/
+
+
+
+
+
+
+.carousel-caption {
+ 
+  width: 70%; /* adjust the width according to your needs */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center !important;
+  margin-right: 30% !important;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 50px;
+  height: 50px;
+ 
+  color: #fff;
+  
+  cursor: pointer;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-caption {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+/* Add some attractive background and text color */
+.navbar {
+  background-color: #f7f7f7 !important; /* light gray background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.navbar-brand {
+  color: #333; /* dark gray text */
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-link {
+  color: #666 !important; /* medium gray text */
+  transition: color 0.2s ease; /* add some animation */
+  font-weight: 600 !important;
+}
+
+.nav-link:hover {
+  color:orange !important; /* dark gray text on hover */
+}
+
+/* Center the navbar brand on small devices */
+
+  /* Apply styles when screen size is less than 580px */
+  @media (max-width: 580px) {
+    .navbar-brand {
+       display: block;
+       width: 100%;
+       text-align: center;
+       margin-bottom: 10px;
+     }
+    .nav {
+       flex-direction: row;
+       justify-content: center;
+     }
+     .dd{
+      flex-direction: row;
+       justify-content: center;
+       display: block;
+       width: 100%;
+       text-align: center;
+     }
+  }
+
+/* Add some animation to the cart badge */
+.badge {
+  animation: pulse 2s infinite; /* add some animation */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* Add some basic styling to the input box */
+
+
+
+
+
+
+
+
+
+
+
+.input-group {
+  margin-top: 7px ;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid orange !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 15px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 15px !important;
+}
+
+.form-control {
+  padding: 13px 30px !important;
+  font-size: 16px;
+  border: none !important;
+  
+  background-color: #f7f7f7;
+  transition: background-color 0.3s ease;
+}
+
+.form-control:focus {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.input-group-text {
+  background-color:orange !important; /* Add a green background color */
+  color: #fff;
+  padding: 12px 20px;
+  border: none !important;
+  
+  cursor: pointer;
+}
+
+.input-group-text:hover {
+  background-color: rgb(249, 175, 39); /* Add a darker green background color on hover */
+}
+
+/* Add some animations to the placeholder */
+.form-control::placeholder {
+  color: rgb(0, 0, 0) !important;
+  font-weight: 600;
+  font-size: 20px;
+  transition: color 0.3s ease;
+  padding: 20px !important;
+}
+
+.form-control:focus::placeholder {
+  color: orange;
+}
+
+/* Add some animations to the search icon */
+.fa-search {
+  transition: transform 0.3s ease;
+}
+
+.input-group-text:hover.fa-search {
+  transform: scale(1.2);
+}
+
+/* Make the input box sticky to the top when the navbar is at the bottom */
+
+
+.sliderbtn1{
+  background-color: brown !important;
+  color: white !important;
+}
+.sliderbtn2{
+  background-color: #333 !important;
+  color: #fff !important;
+}
+.addbtn{
+  background-color: orange !important;
+  color: black !important;
+  padding: 5px 10px !important;
+  border-radius: 20px !important;
+  border: none;
+}
+.removebtn{
+  background-color: #333 !important;
+  color: #fff !important;
+  padding: 5px 10px !important;
+  border-radius: 20px !important;
+  border: none;
+}
+.navblack{
+  color: black !important;
+}
+
+ .scrolled-card {
+  width: 400px; /* adjust the width to your liking */
+  height: 300px; /* adjust the height to your liking */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.scrolled-card .card-body {
+  padding: 30px;
+}
+
+.scrolled-card .card-title {
+  font-size: 24px;
+}
+
+.scrolled-card .card-text {
+  font-size: 18px;
+}
+
+
+/* Add box shadow and animations to the cards */
+.card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Make product name and price tag in the same row */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+ 
+
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.price-tag {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sliderbtn1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center product description in x-axis */
+.card-text {
+  text-align: center;
+}
+
+/* Make star ratings in one row */
+.rating {
+  display: flex;
+  justify-content: center;
+}
+
+.rating i {
+  margin: 0 2px;
+}
+
+/* Responsive design for all screens */
+@media (max-width: 768px) {
+ .card {
+    flex-direction: column;
+  }
+ .card-body {
+    padding: 10px;
+  }
+ .card-title {
+    font-size: 16px;
+  }
+ .price-tag {
+    font-size: 14px;
+  }
+ .card-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+ .card {
+    flex-direction: column;
+  }
+ .card-body {
+    padding: 5px;
+  }
+ .card-title {
+    font-size: 14px;
+  }
+ .price-tag {
+    font-size: 12px;
+  }
+ .card-text {
+    font-size: 10px;
+  }
+}
+
+/* Add this to your CSS file */
+.cart-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.cart-header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.cart-header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.cart-body {
+  padding: 20px;
+}
+
+.cart-body h2 {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.cart-body button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cart-body button:hover {
+  background-color: #444;
+}
+
+.cart-body .ToastContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.cart-body .ToastContainer .toast {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-body .ToastContainer .toast::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.cart-body .ToastContainer .toast:hover {
+  background-color: #444;
+}
+
+.cart-body .ToastContainer .toast:hover::before {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cart-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.cart-footer h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Add animation to the cart */
+.cart-container {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .cart-container {
+    margin: 20px auto;
+    padding: 10px;
+  }
+  .cart-header {
+    padding: 5px;
+  }
+  .cart-body {
+    padding: 10px;
+  }
+  .cart-body button {
+    padding: 5px 10px;
+  }
+  .cart-footer {
+    padding: 5px;
+  }
+}
+.avail{
+  color: green !important;
+  font-size: 20px !important;
+}
+.acco{
+  color: red !important;
+  font-size: 20px !important;
+}
+.card-img {
+  width: 100%; /* make the image take up the full width of the container */
+  height: 150px; /* set a fixed height for all images */
+  object-fit: cover; /* scale the image to fit the container while maintaining aspect ratio */
+  border-radius: 10px; /* add a border radius for a nicer look */
+}
+.card-img-top {
+
+  width: 100%; /* make the image take up the full width of the container */
+  height: 150px; /* set a fixed height for all images */
+  object-fit: cover; /* scale the image to fit the container while maintaining aspect ratio */
+  border-radius: 10px; /* add a border radius for a nicer look */
+}
+
+
+
+
+
+.account-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-message {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.checkbox-container {
+  margin-bottom: 20px !important;
+  
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px ! important;
+  padding: 20px !important;
+  border: 2px solid black !important;
+}
+
+.form-row {
+  margin-bottom: 20px;
+}
+
+.form-control {
+ 
+  font-size: 16px;
+  border: 3px solid orange !important;
+}
+
+.form-control:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn {
+  background-color: #ff9900 !important;
+  color: black;
+  padding: 10px 20px;
+  border: none !important;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px !important;
+}
+
+.submit-btn:hover {
+  background-color: #ff9900 !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .account-container {
+    padding: 10px;
+  }
+  .form-row {
+    margin-bottom: 10px;
+  }
+  .form-control {
+    
+    font-size: 14px;
+  }
+}
+
+
+
+.checkbox-container input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.checkbox-container p {
+  font-size: 16px;
+  color: #333 !important;
+  transition: color 0.3s ease-in-out;
+}
+
+.checkbox-container:hover p {
+  color: #666 !important;
+}
+
+.checkbox-container input[type="checkbox"]:checked + p {
+  color:green !important;
+  
+}
+
+/* Animation */
+.checkbox-container input[type="checkbox"]:checked {
+  animation: checkbox-checked 0.5s ease-in-out;
+}
+
+@keyframes checkbox-checked {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3px;
+}
+
+.footer.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer.col-md-6 {
+  flex-basis: 50%;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  
+}
+
+.social-links li {
+  margin-right: 20px;
+}
+
+.social-links a {
+   color: orange;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color:whitesmoke;
+}
+
+.social-links i {
+  font-size: 24px;
+}
+
+/* Animations */
+.footer {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+ .footer.col-md-6 {
+    flex-basis: 100%;
+  }
+ .social-links {
+    justify-content: center;
+  }
+ .social-links li {
+    margin-right: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header {
+  background-color: #FFC107; /* darker orange */
+  color: #000; /* black */
+  padding: 20px;
+  text-align: center;
+}
+.terms-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.terms-header {
+  background-color: #FFC107; /* darker orange */
+  color: #000; /* black */
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.terms-content {
+  padding: 20px;
+}
+.terms-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.terms-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.terms-list li:last-child {
+  border-bottom: none;
+}
